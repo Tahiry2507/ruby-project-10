@@ -42,9 +42,9 @@ string3 = "<html>
   </body>
 </html>"
 
-string3.scan (/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\(?:[A-Z]{2}|com|org|net$/) do |x|
+string3.scan (/[a-z]+@+[a-z]+.com/) do |x|
 	puts x
 end
 
-
+# Time spent : 10 hours
 
