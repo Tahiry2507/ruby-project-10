@@ -50,15 +50,12 @@ end
 
 string3.scan (/[a-z]+@+[a-z]+.[a-z]+/) do |x|
   if x.to_s.include? ".com"
-  	a << x
+    a << x
   else 
-	a << x + ".com"
+    a << x + ".com"
   end
 end
 
 puts a
 
-# Time spent : 10 hours
-
-# |[a-z]+\s+at|\s+[a-z]+.com|[a-z]+@+[a-z]+
-
+# Time spent : 11 hours
